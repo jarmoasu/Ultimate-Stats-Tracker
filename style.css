@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 5px;
+  }
+  input, select, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+  button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Center text */
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  #eventInputTable td {
+    width: calc(100% / 7); /* Equal widths for event input table cells */
+  }
+  #eventInputTable button {
+    display: block; /* Make buttons block-level */
+    margin: 5px auto; /* Center buttons horizontally */
+  }

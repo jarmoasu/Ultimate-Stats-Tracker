@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Stats Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ultimate Stats Tracker</h1>
+
+  <section id="team-info">
+    <h2>Event Information</h2>
+    <label for="eventName">Event Name:</label>
+    <input type="text" id="eventName"><br><br>
+
+    <label for="playerName">Player Name:</label>
+    <input type="text" id="playerName">
+    <button id="addPlayer">Add Player</button><br><br>
+
+  </section>
+
+  <section id="event-tracking">
+    <h2>Event Tracking</h2>
+    <table id="eventInputTable">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Pass</th>
+          <th>Turnover (Throwaway)</th>
+          <th>Assist (Goal Assist)</th>
+          <th>Goal</th>
+          <th>Break</th>
+          <th>Drop</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <button id="undoButton">Undo</button>
+  </section>
+
+  <section id="data-display">
+    <h2>Statistics</h2>
+    <table id="teamTable">
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="playerStatsTable">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Passes</th>
+          <th>Turnovers</th>
+          <th>Assists</th>
+          <th>Goals</th>
+          <th>Breaks</th>
+          <th>Drops</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="eventTable">
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>Player</th>
+          <th>Event</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button id="exportCSV">Export CSV</button>
+    <button id="clearAll">Clear All Inputs</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

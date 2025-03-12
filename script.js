@@ -110,17 +110,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function loadData() {
-        const storedData = JSON.parse(localStorage.getItem("ultimateStats")) || {};
-        if (eventNameInput) {
-            eventNameInput.value = storedData.eventName || "";
-        }
-        const today = new Date().toISOString().split('T')[0];
-        updatePlayerList();
-        updateEventTable();
-        updateTeamTable(today);
-        updatePlayerStatsTable();
+function loadData() {
+    const storedData = JSON.parse(localStorage.getItem("ultimateStats")) || {};
+    if (eventNameInput) {
+        eventNameInput.value = storedData.eventName || "";
     }
+    players = storedData.players || []; // Load players
+    events = storedData.events || [];   // Load events
+    const today = new Date().toISOString().split('T')[0];
+    updatePlayerList();
+    updateEventTable();
+    updateTeamTable(today);
+    updatePlayerStatsTable();
+}
 
     function saveData() {
         const data = {

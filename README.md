@@ -2,6 +2,10 @@
 
 This is a simple web application for tracking statistics for Ultimate Frisbee games. It allows you to record player actions, view real-time statistics, and export the data as a CSV file.
 
+The app is coded using Google's Gemini AI asssitant. 
+
+ALL THE DATA IS SAVED LOCALLY!  The app saves data only to local storage. Be careful, e.g, when refreshing the page. 
+
 ## Features
 
 * **Player Management:** Add and manage players participating in the game.
@@ -9,7 +13,6 @@ This is a simple web application for tracking statistics for Ultimate Frisbee ga
 * **Real-time Statistics:** View player statistics and a log of all recorded events.
 * **Data Export:** Export the statistics as a CSV file for further analysis.
 * **Undo Functionality:** Undo the last recorded event.
-* **Persistent Data:** Saves data to local storage, so data isn't lost when refreshing the page. BUT IT'S ALWAYS LOCAL!
 
 ## How to Use
 

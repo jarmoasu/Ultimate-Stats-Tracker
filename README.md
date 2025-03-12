@@ -4,7 +4,7 @@ This is a simple web application for tracking statistics for Ultimate Frisbee ga
 
 The app is coded using Google's Gemini AI asssitant. 
 
-ALL THE DATA IS SAVED LOCALLY!  The app saves data only to local storage. Be careful, e.g, when refreshing the page. 
+ALL THE DATA IS SAVED LOCALLY!  The app saves data only to local storage. 
 
 ## Features
 

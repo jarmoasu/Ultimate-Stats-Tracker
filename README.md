@@ -4,7 +4,7 @@ Ultimate Stats Tracker is a lightweight web application designed to help you tra
 
 The app is coded using AI asssitant (Version 1 with Google Gemini and there on with ChatGPT 03-mini )
 
-Please feel free to test https://ultimate-stats-tracker-9pdr62olp-jarmo-suorantas-projects.vercel.app/
+Please feel free to test [https://ultimate-stats-tracker.vercel.app/](https://ultimate-stats-tracker.vercel.app/)
 
 ## Technologies
 

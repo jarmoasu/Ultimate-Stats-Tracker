@@ -1,55 +1,82 @@
 # Ultimate Stats Tracker
 
-This is a simple web application for tracking statistics for Ultimate Frisbee games. It allows you to record player actions, view real-time statistics, and export the data as a CSV file.
+Ultimate Stats Tracker is a lightweight web application designed to help you track game statistics for Ultimate Frisbee matches. The app allows you to manage players, record in-game events, view real-time statistics, and export your data as a CSV file. It also features server-side scraping to automatically add players from external event pages.
 
-The app is coded using Google's Gemini AI asssitant. 
+The app is coded using AI asssitant (Version 1 with Google Gemini and there on with ChatGPT 03-mini )
 
-ALL THE DATA IS SAVED LOCALLY!  The app saves data only to local storage. 
+## Technologies
+
+- **HTML/CSS/JavaScript:** Front-end interface and dynamic functionality.
+- **LocalStorage:** For data persistence across sessions.
+- **Serverless Functions (Vercel):** To perform server-side scraping with [Cheerio](https://cheerio.js.org/).
+- **Vercel:** Hosting and deployment platform for serverless applications.
+
+## Project Structure
+ultimate-stats-tracker/ ├── index.html # Main HTML file ├── style.css # Stylesheet for the app ├── script.js # Client-side JavaScript for functionality ├── package.json # Project metadata and dependencies └── api/ └── scrape.js # Serverless function for scraping player names
 
 ## Features
 
-* **Player Management:** Add and manage players participating in the game.
-* **Event Tracking:** Record events such as passes, turnovers, assists, goals, breaks, and drops for each player.
-* **Real-time Statistics:** View player statistics and a log of all recorded events.
-* **Data Export:** Export the statistics as a CSV file for further analysis.
-* **Undo Functionality:** Undo the last recorded event.
+- **Player Management:**  
+  Easily add, view, and remove players. Each player is displayed with a red "×" button for quick removal.
 
-## How to Use
+- **Event Recording:**  
+  Record key game events—such as passes, turnovers, assists, goals, breaks, and drops—for each player using a dedicated button interface. Event cells also show the current count next to the button.
 
-1.  **Add Players:** Enter player names in the "Player Name" input field and click "Add Player" (or press Enter).
-2.  **Record Events:** Use the buttons in the "Event Tracking" table to record events for each player.
-3.  **View Statistics:** The "Statistics" section displays real-time player statistics and a log of events.
-4.  **Export Data:** Click the "Export CSV" button to download the statistics as a CSV file.
-5.  **Undo Events:** Click the "Undo" button to remove the last recorded event.
-6.  **Clear All:** Click the "Clear All Inputs" button to clear all data.
+- **Real-Time Statistics:**  
+  See live updates in player statistics and event logs as you record game events.
 
-## Files
+- **Data Export:**  
+  Export your game data as a CSV file for further analysis.
 
-* `index.html`: The main HTML file containing the structure of the application.
-* `script.js`: The JavaScript file containing the application logic.
-* `style.css`: The CSS file containing the application styles.
-* `README.md`: This file, providing information about the application.
+- **Server-Side Scraping:**  
+  Automatically scrape player names from external event pages (from nimenhuuto.com) using a serverless API. No CORS workarounds needed on the client side!
 
-## Development
+- **Undo Functionality:**  
+  Easily undo the last recorded event with a dedicated, wide, and centered button.
 
-To run the application locally:
+## Installation and Local Development
 
-1.  Open `index.html` in your web browser.
+To set up and test Ultimate Stats Tracker locally, follow these steps:
 
-## Deployment
+1. **Clone or Download the Repository:**  
+   Ensure your project folder includes the following files and folders:
+   - `index.html`
+   - `style.css`
+   - `script.js`
+   - `package.json`
+   - `/api/scrape.js`
 
-This application can be deployed in several ways:
+2. **Install Dependencies:**  
+   Open your terminal in the project folder and run:
 
-* **Google Drive & Google Sites:** Upload the files to Google Drive, share them, and embed the `index.html` link into a Google Site.
-* **GitHub Pages:** Create a GitHub repository, upload the files, and enable GitHub Pages.
-* **Firebase Hosting:** Use the Firebase CLI to deploy the application to Firebase Hosting.
 
-## Contributing
+3. **Run the App Locally Using Vercel CLI:**  
+If you haven’t already, install the Vercel CLI globally (preferably via [nvm](https://github.com/nvm-sh/nvm)):
 
-Contributions are welcome, just remember this is a hobby / test project, nothing serious and will be forgoten soon.
+Then start the local development server:
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-## License
 
-This project is open source.
+## Deployment to Vercel
 
-Thanks!
+Ultimate Stats Tracker is optimized for deployment to Vercel. Once you have tested your app locally, deploy it with these steps:
+
+1. **Log In to Vercel:**  
+In your project folder, run:
+
+Follow the prompts to log in via your email.
+
+2. **Deploy the Project:**  
+Run the following command in the root directory of your project:
+
+Answer the guided prompts to set up and deploy your project. Vercel will provide a public URL for your live app.
+
+Answer the guided prompts to set up and deploy your project. Vercel will provide a public URL for your live app.
+
+3. **Updating Your App:**  
+When you need to update the app, run:
+to push your changes to production.
+
+
+
+

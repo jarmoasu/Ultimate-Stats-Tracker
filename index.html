@@ -16,8 +16,16 @@
 
     <label for="playerName">Player Name:</label>
     <input type="text" id="playerName">
-    <button id="addPlayer">Add Player</button><br><br>
+    <button id="addPlayer">Add Player</button>
+    <button id="scrapePlayers">Scrape Players</button><br><br>
 
+    <div id="scrapingWizard" style="display: none;">
+      <h2>Scrape Players from Nimenhuuto.com</h2>
+      <label for="nimenhuutoUrl">Event URL:</label>
+      <input type="text" id="nimenhuutoUrl"><br>
+      <button id="startScraping">Start Scraping</button>
+      <div id="scrapingResult"></div>
+    </div>
   </section>
 
   <section id="event-tracking">
@@ -34,8 +42,7 @@
           <th>Drop</th>
         </tr>
       </thead>
-      <tbody>
-      </tbody>
+      <tbody></tbody>
     </table>
     <button id="undoButton">Undo</button>
   </section>

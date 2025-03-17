@@ -46,8 +46,10 @@ This application can be deployed in several ways:
 
 ## Contributing
 
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+Contributions are welcome, just remember this is a hobby / test project, nothing serious and will be forgoten soon.
 
 ## License
 
 This project is open source.
+
+Thanks!

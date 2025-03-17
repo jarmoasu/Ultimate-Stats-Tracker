@@ -1,58 +1,103 @@
+/* Base styles */
 body {
-    font-family: sans-serif;
-    margin: 20px;
-  }
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  section {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  h2 {
-    margin-top: 0;
-  }
-  label {
-    display: inline-block;
-    width: 120px;
-    margin-bottom: 5px;
-  }
-  input, select, button {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-  }
-  button {
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-  }
-  button:hover {
-    background-color: #0056b3;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center; /* Center text */
-  }
-  th {
-    background-color: #f2f2f2;
-  }
-  #eventInputTable td {
-    width: calc(100% / 7); /* Equal widths for event input table cells */
-  }
-  #eventInputTable button {
-    display: block; /* Make buttons block-level */
-    margin: 5px auto; /* Center buttons horizontally */
-  }
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Ensure equal widths for the event input table cells */
+#eventInputTable td {
+  width: calc(100% / 7);
+}
+
+/* Center event input table buttons */
+#eventInputTable button {
+  display: block;
+  margin: 5px auto;
+}
+
+/* Inner container for player name and remove button */
+.name-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Inner container for event cells (button and stat) */
+.event-cell-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Remove player button style */
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+/* Style the undo button to be wide and centered */
+#undoButton {
+  width: 80%;
+  display: block;
+  margin: 10px auto;
+}

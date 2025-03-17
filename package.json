@@ -1,0 +1,12 @@
+{
+    "name": "ultimate-stats-tracker",
+    "version": "1.0.0",
+    "description": "Ultimate Stats Tracker with server-side scraping",
+    "main": "index.js",
+    "scripts": {
+      "start": "vercel dev"
+    },
+    "dependencies": {
+      "cheerio": "^1.0.0-rc.12"
+    }
+  }
